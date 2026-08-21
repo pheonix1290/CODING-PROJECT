@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>reservations</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reservations</h1>
+            <h3><p>Make a reservation here :</p></h3>
+        </header>
+
+        <hr/>
+
+        <main>
+                            <!--Reservation Info-->
+             <section id="reservation info">
+                <h2>Reserve Your Table</h2>
+                    <p>We are delighted to welcome you to Savannah Spice, where authentic African flavours meet warm hospitality.<br/>
+                     Whether you're planning a family dinner, a romantic evening, a birthday celebration, or a gathering with friends,<br/>
+                     we are here to make your dining experience memorable.<br/></p>
+                    
+                    <p>To ensure we have the perfect table ready for you, please complete the reservation form below.<br/>
+                     We recommend booking in advance, especially during weekends and public holidays.</p>
+                    
+                    <p>Once we receive your request, a member of our team will contact you to confirm your reservation.<br/>
+                     We look forward to serving you and sharing the rich taste of Africa with you.</p>
+             </section>
+                              <!--Reservation Form-->
+             <section id="form">
+              <form action="" method="get" class="reservation form">
+                <form  method="post"  class="personal info">
+                  <fieldset>
+                               <!--Name box-->
+                    <div class="full Name">
+                        <label for="full name">Full  name:</label>
+                        <input type="text" name="full name" id="full name" required/>
+                        <button type="button">save</button>
+                    </div> 
+                    <hr/>
+                               <!--Email Box-->
+                    <div class="Email Address">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="emial address" required/>
+                        <button type="button">save</button>
+                    </div>
+                    <hr/>
+                               <!--Phone no Box-->
+                    <div class="phone number">
+                        <label for="phone">Phone  number:</label>
+                        <input type="tel" name="phone" id="phone" optional/>
+                        <button type="button">save</button>
+                    </div>
+                    <hr/>
+                               <!--date box-->
+                    <div class="reservation date">
+                        <label for="date">Reservation date:</label>
+                        <input type="date" name="date" id="reservation date" required/>
+                        <button type="button">save</button>
+                    </div>  
+                    <hr/> 
+                               <!--Reservation Time-->     
+                    <div class="reservation time">
+                        <label for="time">Reservation  Time:</label>
+                        <input type="time" name="time" id="reservation time" required/>
+                        <button type="button">save</button>
+                    </div> 
+                    <hr/>
+                               <!--No of Guests-->  
+                    <div class="number of guests">
+                        <label for="number">Number of guests:</label>
+                        <input type="number" name="number" id="number of guests" required/>
+                        <button type="button">save</button>
+                    </div> 
+                  </fieldset>                            
+                </form>
+                                  <!--sitting arrangment-->
+                <form method="get" class="reservation form">
+                    <fieldset>
+                     <legend>Which sitting arrangment would you like</legend>
+                        <ul>
+                         <li>
+                           <label><input type="radio" name="radio" value="outdoor" required/>outdoor</label>
+                         </li>
+                         <li>
+                           <label><input type="radio" name="radio" value="indoor" required/>indoor</label>
+                         </li>
+                         <li>
+                            <label><input type="radio" name="radio" value="any" required/>any</label>
+                         </li>
+                        </ul>   
+                    </fieldset>
+                </form>
+                <form method="get" class="event">
+                    <fieldset>
+                        <legend>What is the Occasion</legend>
+                        <ul>
+                            <li>
+                                <label><input type="radio" name="radio" value="birthday" required/>Birthday</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="radio" value="anniversary" required/>Anniversary</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="radio" value="famiLY gathering" required/>Family gathering</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="radio" value="business meeting" required>Business Metting</label>
+                            </li>
+                            <li>
+                                <label for="other">other</label>
+                                <input type="text" name="other" id="other" required/>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <form method="post" class="reservations form">
+                    <fieldset>
+                       <legend>optional</legend>
+                        <label for="request">Special Request</label>
+                        <input type="text" name="request" id="request" optional/> 
+                        <button type="button">save</button>
+                        <p>this can be anything like (e.g., allergies, wheelchair access, birthday decorations)</p>
+                    </fieldset>
+                </form>
+                <div>
+                    <button type="submit">submit</button>
+                </div>
+              </form>  
+             </section>  
+
+             <hr/>
+
+                                   <!--booking info-->    
+            <section id="booking info">
+                <h2>Booking Information</h2>
+                <ul>
+                    <li><p>Reservations are recommended for parties of all sizes.</p></li>
+                    <li><p>Please arrive within 15 minutes of your reserved time.</p></li>
+                    <li><p>If you need to cancel or change your booking, <br/>
+                        kindly notify us at least 24 hours in advance.</p></li>
+                    <li><p>Large group reservations may require a deposit.</p></li>  
+                    <li><p>For parties of more than 10 guests, please contact us directly for special arrangements.</p></li>  
+                </ul>
+                <h3>Restaurant Hours</h3>
+                <p>Monday – Thursday: 12:00 PM – 10:00 PM</p>
+                <p>Friday – Saturday: 12:00 PM – 11:00 PM</p>
+                <p>Sunday: 1:00 PM – 9:00 PM</p>
+
+            </section>                                  
+        </main>
+         <hr/>
+                                        <!--bottom of page-->
+        <footer>
+            <P>© 2024 African Cuisine. All rights reserved.</P>
+            <a href="../resturant.html">Back to Home</a>
+        </footer>                       
+    </body>
+ </html>
