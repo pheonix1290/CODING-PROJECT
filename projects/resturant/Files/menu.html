@@ -1,123 +1,372 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta carset="UTF-8">
-        <title>Menu</title>
-    </head>
-    <body>
-                     <!--Top of Page-->
-        <header>
-            <h1>Menu</h1>
-            <p>Look below on table of content to search our menu and order the cuisine that camptures ur eyes and open ur taste nuds to a level of spiece you never seen before</p>
-            <h4><p>Promise finger licking food!</p></h4>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | African Cuisine</title>
+    <style>
+/* Basic restaurant website styling
+   Inspired by the supplied Contact page template. */
 
-        <hr/>
+* {
+    box-sizing: border-box;
+}
 
-        <!--Main Menu-->
-        <main>
-            <section id="first row">
-                <table id="menu-table">
-                    <thead>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f1e7;
+    color: #24170f;
+    line-height: 1.6;
+}
+
+/* Top section */
+header {
+    background-color: #754322;
+    color: white;
+    text-align: center;
+    padding: 28px 20px 34px;
+}
+
+header h1 {
+    margin: 0 0 18px;
+    font-size: 52px;
+}
+
+header p {
+    max-width: 800px;
+    margin: 8px auto;
+    font-size: 18px;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: #ffd36b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 52px auto;
+}
+
+section {
+    background-color: white;
+    border-radius: 18px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #a65319;
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #754322;
+}
+
+hr {
+    display: none;
+}
+
+/* Menu page */
+#menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#menu-table th,
+#menu-table td {
+    padding: 18px;
+    border-bottom: 1px solid #ead8c5;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#menu-table thead th {
+    background-color: #754322;
+    color: white;
+    font-size: 18px;
+}
+
+#menu-table tbody th {
+    width: 30%;
+    color: #754322;
+    font-size: 18px;
+}
+
+#menu-table tbody th p {
+    margin: 0 0 10px;
+}
+
+#menu-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: #a65319;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #754322;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffd36b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Reservation page */
+.reservation-info,
+.booking-info,
+.reservation-form {
+    text-align: center;
+}
+
+.reservation-form {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    border: 1px solid #dfc6ad;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+legend {
+    color: #a65319;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-row {
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    color: #754322;
+    margin-bottom: 6px;
+}
+
+.form-row input,
+.special-request input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9ae95;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.radio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-list li {
+    margin: 10px 0;
+}
+
+.radio-list input {
+    margin-right: 8px;
+}
+
+.button {
+    background-color: #754322;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #a65319;
+}
+
+.booking-info ul {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 18px;
+    }
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #menu-table {
+        font-size: 14px;
+    }
+
+    #menu-table th,
+    #menu-table td {
+        padding: 10px;
+    }
+
+    #menu-table img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Menu</h1>
+        <p>Look below at our menu and choose the cuisine that catches your eye and opens your taste buds to a level of spice you have never seen before.</p>
+        <p><strong>Promise: finger-licking food!</strong></p>
+
+        <nav>
+            <a href="../resturant.html">Home</a> /
+            <a href="../about.html">About Me</a> /
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Menu</h2>
+
+            <table id="menu-table">
+                <thead>
                     <tr>
-                        <th scope="col">Cuisine Name /</th>
-                        <th scope="col">Content /</th>
-                        <th scope="col">price per Person /</th>
+                        <th scope="col">Cuisine Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price per Person</th>
                     </tr>
-                    </thead>
-            <tbody>   
-                 <section id="second row">
-                    <tr>        
-                    <th scope="row">
-                        <p>Chicken Feet Curry</p>
-                        <img src="../assets/image/Chickem feet curry.jpg" alt="chicken feet curry" height="100 width=100"/>
-                    </th>
-                    <td>Tender chicken feet slow-cooked in a rich,<br/>
-                         mildly spiced curry sauce,<br/>
-                         served with steamed rice or pap.<br/></td>
-                    <td>£12.99</td> 
-                    </tr>
-                 </section> 
-                 <section id="thidr row">
+                </thead>
+
+                <tbody>
                     <tr>
                         <th scope="row">
-                            <p>Nigerian Jollof Rice & Chicken</p>
-                            <img src="../assets/image/NIGERIAN JOLLOF RICE.jpg" alt="Nigerian Jollof rice" height="100" width="100"/>
+                            <p>Chicken Feet Curry</p>
+                            <img src="../assets/image/Chickem feet curry.jpg" alt="Chicken feet curry">
                         </th>
-                        <td>Smoky tomato jollof rice served with grilled or fried chicken,<br/>
-                         salad, and fried plantain.<br/></td>
-                        <td>£14.99</td> 
+                        <td>Tender chicken feet slow-cooked in a rich, mildly spiced curry sauce, served with steamed rice or pap.</td>
+                        <td class="price">£12.99</td>
                     </tr>
-                 </section>
-                 <section id="fourth row">
-                    <th scope="row">
-                        <p>Plantain & Chicken Curry Sauce</p>
-                        <img src="../assets/image/Plantain and chicken sauce 🤤 (1).jpg" alt="Plantain and chicken curry sauce" height="100" width="100"/>
-                    </th>
-                    <td>SauceSweet fried plantains served with tender chicken in a creamy,<br/>
-                         flavourful curry sauce and a side of rice.<br/></td>
-                    <td>£13.99</td>     
-                 </section>
-                 <section id="fourth row">
+
+                    <tr>
+                        <th scope="row">
+                            <p>Nigerian Jollof Rice &amp; Chicken</p>
+                            <img src="../assets/image/NIGERIAN JOLLOF RICE.jpg" alt="Nigerian Jollof rice">
+                        </th>
+                        <td>Smoky tomato jollof rice served with grilled or fried chicken, salad, and fried plantain.</td>
+                        <td class="price">£14.99</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            <p>Plantain &amp; Chicken Curry Sauce</p>
+                            <img src="../assets/image/Plantain and chicken sauce 🤤 (1).jpg" alt="Plantain and chicken curry sauce">
+                        </th>
+                        <td>Sweet fried plantains served with tender chicken in a creamy, flavourful curry sauce and a side of rice.</td>
+                        <td class="price">£13.99</td>
+                    </tr>
+
                     <tr>
                         <th scope="row">
                             <p>Waakye</p>
-                            <img src="../assets/image/Waakye.jpg" alt="Waakye" height="100" width="100"/>
+                            <img src="../assets/image/Waakye.jpg" alt="Waakye">
                         </th>
-                        <td>Traditional Ghanaian rice and beans served with beef, boiled egg,<br/>
-                         spaghetti, fried plantain, salad, shito (black pepper sauce), and<br/>
-                          your choice of meat or fish.<br/></td>
-                        <td>£15.99</td>  
+                        <td>Traditional Ghanaian rice and beans served with beef, boiled egg, spaghetti, fried plantain, salad, shito (black pepper sauce), and your choice of meat or fish.</td>
+                        <td class="price">£15.99</td>
                     </tr>
-                 </section>
-                 <section id="fifth row">
+
                     <tr>
                         <th scope="row">
                             <p>Sebon Khady</p>
-                            <img src="../assets/image/Sebon khady.jpg" alt="sebon khady" height="100" width="100"/>
-                        </th>    
-                        <td>A fragrant Senegalese-style rice dish served with seasoned chicken,<br/>
-                         mixed vegetables, and a rich tomato-based sauce<br/></td>
-                        <td>£16.99</td> 
+                            <img src="../assets/image/Sebon khady.jpg" alt="Sebon Khady">
+                        </th>
+                        <td>A fragrant Senegalese-style rice dish served with seasoned chicken, mixed vegetables, and a rich tomato-based sauce.</td>
+                        <td class="price">£16.99</td>
                     </tr>
-                 </section>
-                 <section id="six row">
-                    <tr> 
+
+                    <tr>
                         <th scope="row">
                             <p>Moroccan Chicken Rfissa</p>
-                            <img src="../assets/image/Moroccan Chicken Rfissa Trid with Chicken and Lentils.jpg"
-                             alt="moroccan chicken rfissa trid with chicken and lentils" height="100" width="100"/>
+                            <img src="../assets/image/Moroccan Chicken Rfissa Trid with Chicken and Lentils.jpg" alt="Moroccan chicken rfissa">
                         </th>
-                        
-                        <td>Shredded trid (thin flatbread) topped with slow-cooked chicken,<br/>
-                         lentils, onions, and aromatic Moroccan spices in a savoury broth.<br/></td>
-                        <td>£17.99</td> 
+                        <td>Shredded trid (thin flatbread) topped with slow-cooked chicken, lentils, onions, and aromatic Moroccan spices in a savoury broth.</td>
+                        <td class="price">£17.99</td>
                     </tr>
-                 </section>
-                 <section id="seventh row">
-                    <tr>
-                        <th scope="raw">
-                            <p>Egyptian Hawawshi</p>
-                            <img src="../assets/image/Egyptiska hawawshi- Fyllda pitabröd - Zeinas Kitchen.jpg"
-                            alt="Egyptiska hawawshi- fyllda pitabrod-" height="100" width="100"/>
-                        </th>
-                        <td>Crispy pita bread stuffed with seasoned minced beef, onions,<br/>
-                             herbs, and spices, served with chips and a fresh salad<br/></td>
-                        <td>£13.49</td>
-                    </tr>
-                 </section>
-                 </tbody> 
-            </tbody>     
-                </table>
-            </section>
-        </main>
-         
-        <hr/>
 
-                       <!--Bottom of Page-->
-        <footer>
-            <a href="../resturant.html">Back to Home</a>
-            <p>© 2024 African Cuisine. All rights reserved.</p>
-        </footer>               
-    </body>
+                    <tr>
+                        <th scope="row">
+                            <p>Egyptian Hawawshi</p>
+                            <img src="../assets/image/Egyptiska hawawshi- Fyllda pitabröd - Zeinas Kitchen.jpg" alt="Egyptian hawawshi">
+                        </th>
+                        <td>Crispy pita bread stuffed with seasoned minced beef, onions, herbs, and spices, served with chips and a fresh salad.</td>
+                        <td class="price">£13.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <a href="../resturant.html">Back to Home</a>
+        <p>&copy; 2024 African Cuisine. All rights reserved.</p>
+    </footer>
+</body>
 </html>

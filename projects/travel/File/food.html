@@ -3,6 +3,182 @@
     <head>
         <meta charset="UTF-8">
         <title>food</title>
+                                             <!--CSS content-->
+    <style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0df;
+    color: #2d3025;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+header p {
+    max-width: 850px;
+    margin: 15px auto 0;
+    font-size: 17px;
+}
+
+#nav nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#nav a {
+    color: #f6d477;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+#food-cards {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Turn the old tables into a simple responsive card layout */
+#food-cards > ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+#food-cards > ol > table {
+    width: 100% !important;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+#food-cards > ol > table td {
+    padding: 0;
+}
+
+.food-profile fieldset {
+    height: 100%;
+    border: 2px solid #d8bd70;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fffaf0;
+}
+
+.food-profile figure {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.food-profile figure img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.food-profile figcaption p {
+    color: #2f5d50;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.food-profile ul {
+    padding-left: 22px;
+}
+
+.food-profile li {
+    margin-bottom: 8px;
+}
+
+.food-profile strong,
+.food-profile b {
+    color: #8a5a20;
+}
+
+/* Footer */
+footer {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer a {
+    color: #f6d477;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Hide old horizontal rules */
+hr {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    #nav a {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    #food-cards {
+        padding: 18px;
+    }
+
+    #food-cards > ol {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
     </head>
     <body>
                                  <!--Top of Page-->

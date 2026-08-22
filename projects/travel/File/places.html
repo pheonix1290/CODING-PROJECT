@@ -3,6 +3,252 @@
     <head>
         <meta charset="UTF-8">
         <title>places</title>
+                                                  <!--CSS content-->                           
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0df;
+    color: #2d3025;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+}
+
+#nav nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#nav a {
+    color: #f6d477;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+main > h2 {
+    color: #2f5d50;
+    text-align: center;
+    font-size: 36px;
+}
+
+main > p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+main > section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+main > section h2 {
+    color: #2f5d50;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+/* Weather cards */
+main > table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+main > table td {
+    vertical-align: top;
+}
+
+fieldset {
+    border: 2px solid #d8bd70;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fffaf0;
+}
+
+legend {
+    color: #2f5d50;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+figure {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+figure img {
+    width: 200px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+b,
+strong {
+    color: #8a5a20;
+}
+
+/* Currency converter */
+#currency div {
+    text-align: center;
+}
+
+#currency iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 410px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Language and packing sections */
+#language,
+#places,
+#essentials,
+#local,
+#safety {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#essentials > li {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#essentials ul ul {
+    background-color: #f7f3e7;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+/* Wildlife safety video */
+#safety iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 20px auto 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer a {
+    color: #f6d477;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Remove old horizontal rules */
+hr {
+    display: none;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    #nav a {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    main > section {
+        padding: 20px;
+    }
+
+    main > table,
+    main > table tbody,
+    main > table tr,
+    main > table td {
+        display: block;
+        width: 100%;
+    }
+
+    main > table {
+        border-spacing: 0;
+    }
+
+    main > table td {
+        margin-bottom: 20px;
+    }
+
+    figure img {
+        width: 160px;
+        height: 140px;
+    }
+
+    #safety iframe {
+        height: 250px;
+    }
+}
+</style>
     </head>
 
     <body>

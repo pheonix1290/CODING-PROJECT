@@ -1,159 +1,393 @@
 <!DOCTYPE html>
- <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <title>reservations</title>
-    </head>
-    <body>
-        <header>
-            <h1>Reservations</h1>
-            <h3><p>Make a reservation here :</p></h3>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | African Cuisine</title>
+    <style>
+/* Basic restaurant website styling
+   Inspired by the supplied Contact page template. */
 
-        <hr/>
+* {
+    box-sizing: border-box;
+}
 
-        <main>
-                            <!--Reservation Info-->
-             <section id="reservation info">
-                <h2>Reserve Your Table</h2>
-                    <p>We are delighted to welcome you to Savannah Spice, where authentic African flavours meet warm hospitality.<br/>
-                     Whether you're planning a family dinner, a romantic evening, a birthday celebration, or a gathering with friends,<br/>
-                     we are here to make your dining experience memorable.<br/></p>
-                    
-                    <p>To ensure we have the perfect table ready for you, please complete the reservation form below.<br/>
-                     We recommend booking in advance, especially during weekends and public holidays.</p>
-                    
-                    <p>Once we receive your request, a member of our team will contact you to confirm your reservation.<br/>
-                     We look forward to serving you and sharing the rich taste of Africa with you.</p>
-             </section>
-                              <!--Reservation Form-->
-             <section id="form">
-              <form action="" method="get" class="reservation form">
-                <form  method="post"  class="personal info">
-                  <fieldset>
-                               <!--Name box-->
-                    <div class="full Name">
-                        <label for="full name">Full  name:</label>
-                        <input type="text" name="full name" id="full name" required/>
-                        <button type="button">save</button>
-                    </div> 
-                    <hr/>
-                               <!--Email Box-->
-                    <div class="Email Address">
-                        <label for="email">Email Address:</label>
-                        <input type="email" name="email" id="emial address" required/>
-                        <button type="button">save</button>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f1e7;
+    color: #24170f;
+    line-height: 1.6;
+}
+
+/* Top section */
+header {
+    background-color: #754322;
+    color: white;
+    text-align: center;
+    padding: 28px 20px 34px;
+}
+
+header h1 {
+    margin: 0 0 18px;
+    font-size: 52px;
+}
+
+header p {
+    max-width: 800px;
+    margin: 8px auto;
+    font-size: 18px;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: #ffd36b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 52px auto;
+}
+
+section {
+    background-color: white;
+    border-radius: 18px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #a65319;
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #754322;
+}
+
+hr {
+    display: none;
+}
+
+/* Menu page */
+#menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#menu-table th,
+#menu-table td {
+    padding: 18px;
+    border-bottom: 1px solid #ead8c5;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#menu-table thead th {
+    background-color: #754322;
+    color: white;
+    font-size: 18px;
+}
+
+#menu-table tbody th {
+    width: 30%;
+    color: #754322;
+    font-size: 18px;
+}
+
+#menu-table tbody th p {
+    margin: 0 0 10px;
+}
+
+#menu-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: #a65319;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #754322;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffd36b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Reservation page */
+.reservation-info,
+.booking-info,
+.reservation-form {
+    text-align: center;
+}
+
+.reservation-form {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    border: 1px solid #dfc6ad;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+legend {
+    color: #a65319;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-row {
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    color: #754322;
+    margin-bottom: 6px;
+}
+
+.form-row input,
+.special-request input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9ae95;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.radio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-list li {
+    margin: 10px 0;
+}
+
+.radio-list input {
+    margin-right: 8px;
+}
+
+.button {
+    background-color: #754322;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #a65319;
+}
+
+.booking-info ul {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 18px;
+    }
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #menu-table {
+        font-size: 14px;
+    }
+
+    #menu-table th,
+    #menu-table td {
+        padding: 10px;
+    }
+
+    #menu-table img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Reservations</h1>
+        <p>Make a reservation here</p>
+
+        <nav>
+            <a href="../resturant.html">Home</a> /
+            <a href="../about.html">About Me</a> /
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-info">
+            <h2>Reserve Your Table</h2>
+
+            <p>We are delighted to welcome you to Savannah Spice, where authentic African flavours meet warm hospitality.</p>
+            <p>Whether you're planning a family dinner, a romantic evening, a birthday celebration, or a gathering with friends, we are here to make your dining experience memorable.</p>
+            <p>To ensure we have the perfect table ready for you, please complete the reservation form below. We recommend booking in advance, especially during weekends and public holidays.</p>
+            <p>Once we receive your request, a member of our team will contact you to confirm your reservation.</p>
+            <p>We look forward to serving you and sharing the rich taste of Africa with you.</p>
+        </section>
+
+        <section class="reservation-form">
+            <h2>Reservation Form</h2>
+
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <div class="form-row">
+                        <label for="full-name">Full name:</label>
+                        <input type="text" name="full-name" id="full-name" required>
                     </div>
-                    <hr/>
-                               <!--Phone no Box-->
-                    <div class="phone number">
-                        <label for="phone">Phone  number:</label>
-                        <input type="tel" name="phone" id="phone" optional/>
-                        <button type="button">save</button>
+
+                    <div class="form-row">
+                        <label for="email">Email address:</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                    <hr/>
-                               <!--date box-->
-                    <div class="reservation date">
-                        <label for="date">Reservation date:</label>
-                        <input type="date" name="date" id="reservation date" required/>
-                        <button type="button">save</button>
-                    </div>  
-                    <hr/> 
-                               <!--Reservation Time-->     
-                    <div class="reservation time">
-                        <label for="time">Reservation  Time:</label>
-                        <input type="time" name="time" id="reservation time" required/>
-                        <button type="button">save</button>
-                    </div> 
-                    <hr/>
-                               <!--No of Guests-->  
-                    <div class="number of guests">
-                        <label for="number">Number of guests:</label>
-                        <input type="number" name="number" id="number of guests" required/>
-                        <button type="button">save</button>
-                    </div> 
-                  </fieldset>                            
-                </form>
-                                  <!--sitting arrangment-->
-                <form method="get" class="reservation form">
-                    <fieldset>
-                     <legend>Which sitting arrangment would you like</legend>
-                        <ul>
-                         <li>
-                           <label><input type="radio" name="radio" value="outdoor" required/>outdoor</label>
-                         </li>
-                         <li>
-                           <label><input type="radio" name="radio" value="indoor" required/>indoor</label>
-                         </li>
-                         <li>
-                            <label><input type="radio" name="radio" value="any" required/>any</label>
-                         </li>
-                        </ul>   
-                    </fieldset>
-                </form>
-                <form method="get" class="event">
-                    <fieldset>
-                        <legend>What is the Occasion</legend>
-                        <ul>
-                            <li>
-                                <label><input type="radio" name="radio" value="birthday" required/>Birthday</label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="radio" value="anniversary" required/>Anniversary</label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="radio" value="famiLY gathering" required/>Family gathering</label>
-                            </li>
-                            <li>
-                                <label><input type="radio" name="radio" value="business meeting" required>Business Metting</label>
-                            </li>
-                            <li>
-                                <label for="other">other</label>
-                                <input type="text" name="other" id="other" required/>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-                <form method="post" class="reservations form">
-                    <fieldset>
-                       <legend>optional</legend>
-                        <label for="request">Special Request</label>
-                        <input type="text" name="request" id="request" optional/> 
-                        <button type="button">save</button>
-                        <p>this can be anything like (e.g., allergies, wheelchair access, birthday decorations)</p>
-                    </fieldset>
-                </form>
-                <div>
-                    <button type="submit">submit</button>
-                </div>
-              </form>  
-             </section>  
 
-             <hr/>
+                    <div class="form-row">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
 
-                                   <!--booking info-->    
-            <section id="booking info">
-                <h2>Booking Information</h2>
-                <ul>
-                    <li><p>Reservations are recommended for parties of all sizes.</p></li>
-                    <li><p>Please arrive within 15 minutes of your reserved time.</p></li>
-                    <li><p>If you need to cancel or change your booking, <br/>
-                        kindly notify us at least 24 hours in advance.</p></li>
-                    <li><p>Large group reservations may require a deposit.</p></li>  
-                    <li><p>For parties of more than 10 guests, please contact us directly for special arrangements.</p></li>  
-                </ul>
-                <h3>Restaurant Hours</h3>
-                <p>Monday – Thursday: 12:00 PM – 10:00 PM</p>
-                <p>Friday – Saturday: 12:00 PM – 11:00 PM</p>
-                <p>Sunday: 1:00 PM – 9:00 PM</p>
+                    <div class="form-row">
+                        <label for="reservation-date">Reservation date:</label>
+                        <input type="date" name="date" id="reservation-date" required>
+                    </div>
 
-            </section>                                  
-        </main>
-         <hr/>
-                                        <!--bottom of page-->
-        <footer>
-            <P>© 2024 African Cuisine. All rights reserved.</P>
-            <a href="../resturant.html">Back to Home</a>
-        </footer>                       
-    </body>
- </html>
+                    <div class="form-row">
+                        <label for="reservation-time">Reservation time:</label>
+                        <input type="time" name="time" id="reservation-time" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="number-of-guests">Number of guests:</label>
+                        <input type="number" name="number" id="number-of-guests" min="1" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which sitting arrangement would you like?</legend>
+
+                    <ul class="radio-list">
+                        <li><label><input type="radio" name="sitting" value="outdoor" required> Outdoor</label></li>
+                        <li><label><input type="radio" name="sitting" value="indoor"> Indoor</label></li>
+                        <li><label><input type="radio" name="sitting" value="any"> Any</label></li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What is the Occasion?</legend>
+
+                    <ul class="radio-list">
+                        <li><label><input type="radio" name="occasion" value="birthday" required> Birthday</label></li>
+                        <li><label><input type="radio" name="occasion" value="anniversary"> Anniversary</label></li>
+                        <li><label><input type="radio" name="occasion" value="family-gathering"> Family gathering</label></li>
+                        <li><label><input type="radio" name="occasion" value="business-meeting"> Business meeting</label></li>
+                        <li>
+                            <label for="other">Other:</label>
+                            <input type="text" name="other" id="other">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="special-request">
+                    <legend>Optional</legend>
+                    <label for="request">Special request</label>
+                    <input type="text" name="request" id="request">
+                    <p>This can be anything like allergies, wheelchair access, or birthday decorations.</p>
+                </fieldset>
+
+                <button class="button" type="submit">Submit Reservation</button>
+            </form>
+        </section>
+
+        <section class="booking-info">
+            <h2>Booking Information</h2>
+
+            <ul>
+                <li>Reservations are recommended for parties of all sizes.</li>
+                <li>Please arrive within 15 minutes of your reserved time.</li>
+                <li>If you need to cancel or change your booking, kindly notify us at least 24 hours in advance.</li>
+                <li>Large group reservations may require a deposit.</li>
+                <li>For parties of more than 10 guests, please contact us directly for special arrangements.</li>
+            </ul>
+
+            <h3>Restaurant Hours</h3>
+            <p>Monday – Thursday: 12:00 PM – 10:00 PM</p>
+            <p>Friday – Saturday: 12:00 PM – 11:00 PM</p>
+            <p>Sunday: 1:00 PM – 9:00 PM</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 African Cuisine. All rights reserved.</p>
+        <a href="../resturant.html">Back to Home</a>
+    </footer>
+</body>
+</html>

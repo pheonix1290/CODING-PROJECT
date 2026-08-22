@@ -3,6 +3,220 @@
     <head>
         <meta charset="UTF-8">
         <title>gallery</title>
+                                                      <!--CSS content-->
+    <style>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0df;
+    color: #2d3025;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    font-size: 50px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+header nav a {
+    color: #f6d477;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main page */
+main {
+    width: 92%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+main > h2,
+main > p {
+    text-align: center;
+}
+
+main > h2 {
+    color: #2f5d50;
+    font-size: 38px;
+}
+
+main > p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+/* Each gallery category */
+main > section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+main > section > h2 {
+    color: #2f5d50;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/* Replace the old table presentation with flexible cards */
+main > section > table {
+    width: 100% !important;
+    border-collapse: separate;
+    border-spacing: 18px;
+}
+
+main > section td {
+    vertical-align: top;
+}
+
+/* Gallery cards */
+fieldset {
+    border: 2px solid #d8bd70;
+    border-radius: 12px;
+    padding: 18px;
+    background-color: #fffaf0;
+    height: 100%;
+}
+
+legend {
+    color: #2f5d50;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+fieldset p {
+    font-size: 16px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* Closing section */
+#closing {
+    text-align: center;
+}
+
+#closing h2 {
+    color: #8a5a20;
+}
+
+#closing p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #2f5d50;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer a {
+    color: #f6d477;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer nav {
+    margin-bottom: 12px;
+}
+
+/* Hide old horizontal rules */
+hr {
+    display: none;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 38px;
+    }
+
+    header nav {
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    main > section {
+        padding: 18px;
+    }
+
+    main > section > table,
+    main > section > table tbody,
+    main > section > table tr,
+    main > section > table td {
+        display: block;
+        width: 100%;
+    }
+
+    main > section > table {
+        border-spacing: 0;
+    }
+
+    main > section td {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 250px;
+    }
+}
+</style>
     </head>
     <body>
                                             <!--Top of page-->
@@ -10,10 +224,10 @@
             <h1>Gallery</h1>
                                             <!--Nav of links-->
             <nav>
-                <a href="../travel.html">Home</a>
-                <a href="./places.html">Places to visit</a>
-                <a href="./food.html">Food</a>
-                <a href="./contact.html">Contact</a>
+                <a href="../travel.html">Home /</a>
+                <a href="./places.html">Places to visit /</a>
+                <a href="./food.html">Food /</a>
+                <a href="./contact.html">Contact /</a>
             </nav>                                
         </header> 
         
@@ -73,7 +287,7 @@
             <section id="landscape">
                 <h2>Landscapes</h2>
                 <section id="landscape">
-                <table width="420" cellspacing="10" cellpadding="15">
+                <table width="450" cellspacing="10" cellpadding="15">
                                                             <!--1. Mount Kenya-->
                     <tr>
                         <td>
@@ -83,15 +297,19 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!4v1787334608142!6m8!1m7!1sSHX3zuMtuX5TC5KiRHsHTA!2m2!1d-0.009300208862109962!2d37.26422819816604!3f80!4f20!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                            </fieldset> 
                         </td>
-                                                              <!-- 2. Great Rift Valley-->   
+                    </tr>    
+                                                              <!-- 2. Great Rift Valley-->  
+                    <tr>                                            
                         <td>
                             <fieldset>
                                 <legend>Great Rift Valley</legend>
                                 <p>A spectacular landscape featuring mountains, valleys and wide-open views.</p>
                                 <iframe src="https://www.google.com/maps/embed?pb=!4v1787334866221!6m8!1m7!1slJcKut5VA5VQ0Uh9PyJBfA!2m2!1d-1.057315664537313!2d36.60335194571437!3f281.78848!4f0!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             </fieldset>
-                        </td>                                          
+                        </td>  
+                    </tr>                                            
                                                                     <!--3. Lake Nakuru-->
+                    <tr>                                              
                         <td>
                             <fieldset>
                                 <legend>Lake Nakuru</legend>
@@ -99,7 +317,7 @@
                                 <iframe src="https://www.google.com/maps/embed?pb=!4v1787335375481!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0t2ZF9DR3c.!2m2!1d-0.3561660121870958!2d36.1002110252537!3f232.11923851500484!4f6.824616646161104!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             </fieldset>
                         </td>                                            
-                    </tr>                                    
+                    </tr>                        
                 </table>
             </section> 
             
@@ -118,7 +336,9 @@
                                 <iframe src="https://www.google.com/maps/embed?pb=!4v1787335778631!6m8!1m7!1sCAoSHENJQUJJaEJvUUtOdTN2alRTRUM1d2RZRk9rd1M.!2m2!1d-4.279762582584992!2d39.59469580949381!3f208.52989!4f0!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             </fieldset>
                         </td>  
+                   </tr>    
                                                                       <!--2. Mombasa Old Town--> 
+                    <tr>                                                  
                         <td>
                             <fieldset>
                                 <legend>Mombasa Old Town</legend>
@@ -126,7 +346,9 @@
                                 <iframe src="https://www.google.com/maps/embed?pb=!4v1787335922951!6m8!1m7!1sa7Z2TApBnfmN2gPu8aay3g!2m2!1d-4.059643200658726!2d39.6797781063761!3f66.593575!4f0!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             </fieldset>
                         </td> 
+                    </tr>    
                                                                       <!--3. Indian Ocean Sunset--> 
+                    <tr>                                              
                         <td>
                             <fieldset>
                                 <legend>Indian Ocean Sunset</legend>
@@ -134,7 +356,7 @@
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CqIZn8Y-_bo?si=9ECsH0hdU-9ly9fH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </fieldset>
                         </td>                                                                                                                                                                 
-                   </tr>
+                    </tr>
                 </table>
             </section> 
             
@@ -142,7 +364,7 @@
 
                                                                     <!--Info on Culture & Food-->
             <section id="culture">
-                <table width="420" cellspacing="10" cellpadding="15">
+                <table width="450" cellspacing="10" cellpadding="15">
                     <tr>
                                                                    <!--1. Kenyan Market-->
                         <td>
