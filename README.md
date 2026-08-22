@@ -68,7 +68,7 @@ The project also includes navigation links to different sections of the website,
 
 **Technologies:** HTML
 
-📁 [`Travel Kenya`](./travel-kenya)
+📁 [`Travel Kenya`](./projects/travel/travel.html)
 
 ---
 
@@ -82,7 +82,7 @@ The homepage also contains a **Popular Dishes** section featuring dishes such as
 
 **Technologies:** HTML
 
-📁 [`African Cuisine`](./restaurant)
+📁 [`African Cuisine`](./projects/resturant/resturant.html)
 
 ---
 
@@ -96,7 +96,7 @@ It helped me practise organising different sections of information and creating 
 
 **Technologies:** HTML
 
-📁 [`Resume`](./resumel)
+📁 [`Resume`](.projects/Resume/resume.html)
 
 ---
 
