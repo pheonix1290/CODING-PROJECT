@@ -68,7 +68,8 @@ The project also includes navigation links to different sections of the website,
 
 **Technologies:** HTML
 
-📁 [`Travel Kenya`](./travel-kenya)
+📁 [`Travel Kenya`](./projects/travel)
+    [preview](https://pheonix1290.github.io/CODING-PROJECT/projects/travel/travel.html)
 
 ---
 
@@ -82,8 +83,9 @@ The homepage also contains a **Popular Dishes** section featuring dishes such as
 
 **Technologies:** HTML
 
-📁 [`African Cuisine`](./restaurant)
-
+📁 [`African Cuisine`](./projects/resturant)
+   [preview](https://pheonix1290.github.io/CODING-PROJECT/projects/resturant/resturant.html) 
+   
 ---
 
 ## 📄 3. Resume Website
@@ -96,7 +98,8 @@ It helped me practise organising different sections of information and creating 
 
 **Technologies:** HTML
 
-📁 [`Resume`](./resumel)
+📁 [`Resume`](.projects/Resume)
+    [preview](https://pheonix1290.github.io/CODING-PROJECT/projects/Resume/resume.html)
 
 ---
 
