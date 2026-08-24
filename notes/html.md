@@ -46,6 +46,7 @@ Used for:
 <tfoot>
 <figure>
 <figcaption>
+<iframe>
 
 
 When to use each.
@@ -117,6 +118,7 @@ Relative vs Absolute paths
  <scope class="">
  <table width="" align="" cellspacing="" cellpadding="">
  <textarea id="" width="" rows= "" columns= "" placeholder="">
+ <iframe src="">
  
  --------------------------------
  ## 11. Tips
