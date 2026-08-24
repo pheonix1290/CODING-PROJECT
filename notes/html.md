@@ -88,6 +88,7 @@ Relative vs Absolute paths
 <select>
 <fieldset>
 <legend>
+<textarea>
 
 ---------------------------------
 
@@ -115,6 +116,7 @@ Relative vs Absolute paths
  <figure class="">
  <scope class="">
  <table width="" align="" cellspacing="" cellpadding="">
+ <textarea id="" width="" rows= "" columns= "" placeholder="">
  
  --------------------------------
  ## 11. Tips
@@ -127,3 +129,5 @@ Relative vs Absolute paths
  ## 12. New tags discovered
  <b>(use when u want make a word or phrase bold just for styling)
  <strong>(use if you want giving warning or make an important inofrmation or keyword bold)
+ 
+ 
