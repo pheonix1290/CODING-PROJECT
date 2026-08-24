@@ -77,6 +77,7 @@ for e.g
 #   class selector: 
 - best used when you want to select all element which bear the same class
 - class selector in css is written with a fullstop before the selector(.class)
+- used when you want to apply same style declarations to multiple elemnts
 e.g 
    <div class="alert-text"></div>
     <!-- CSS -->
@@ -89,6 +90,8 @@ e.g
 # ID selector:
 - best used when you want to select all element which bear the same id
 - ID selector in css is written with a sharp(#) brfore the selector(#ID)
+- used to apply style to one or specific element
+
 e.g
   <div id="title"></div>
                        <!--CSS-->
@@ -159,3 +162,11 @@ e.g
                        }
 </style>                  
 
+# Attribute selector:
+- this best used when you wnat to selects all elemnts with that specifci attribute
+e.g
+<style>
+    p[draggable]{
+        colour: white;
+    }
+</style>
