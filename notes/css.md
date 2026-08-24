@@ -170,3 +170,12 @@ e.g
         colour: white;
     }
 </style>
+        <!--Index.html-->
+<p draggable="true"></p>
+<p draggable="false"></p>   
+       <!--CSS-->
+<style>
+    p[draggable="true"]{
+        background-colour:crimson;
+    }
+</style>       
