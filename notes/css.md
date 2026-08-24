@@ -179,3 +179,52 @@ e.g
         background-colour:crimson;
     }
 </style>       
+
+-----------------------------------------------------------------------------------------
+
+## CSS Properties
+ colour
+ background-colour
+ font-family
+ font-size
+ font-weight
+ text-align
+ height
+ width
+-----------------------------------------------------------------------------------------
+
+## colour:
+- colour  (used to set an element text colour)
+- bakground- colour (sets the background colour of an element) 
+colour in CSS can be sepcified by this following methods:
+-Hexadecimal colors e.g {background-color: #ff0000;}
+-Hexadecimal colors with transparency e.g {background-color: #ff000080;} 
+-RGB colors e.g {background-color: rgb(255, 0, 0);}
+-RGBA colors e.g {background-color: rgba(255, 0, 0, 0.3);} 
+-HSL colors e.g {background-color: hsl(120, 100%, 50%);} 
+-HSLA colors e.g {background-color: hsla(120, 100%, 50%, 0.3);}
+-Predefined/Cross-browser color names e.g {background-color: blue;}
+-With the currentcolor keyword e.g color: blue; border: 10px solid currentcolor;
+
+-----------------------------------------------------------------------------------------
+
+## Font:
+- font-family (used for chaing the font style f a text)
+e.g font-family: "Times New Roman", serif;
+
+- font-size (used for chaning size of text/font)
+e.g font-size: 22px
+
+- font-weight (used for changing boldness of a text)
+- the value can be numerical or keyword
+e.g font-weight: 700; / font-weight: bold;
+
+- text-align (used to set the position of text)
+e.g text-align: centre;
+
+----------------------------------------------------------------------------------------
+
+## Images:
+- height (used to set height of image)
+- width (used to set width of image)
+e.g height= "auto"/ width="200px"

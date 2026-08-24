@@ -119,6 +119,7 @@ Relative vs Absolute paths
  <table width="" align="" cellspacing="" cellpadding="">
  <textarea id="" width="" rows= "" columns= "" placeholder="">
  <iframe src="">
+ <div style= "background: red; font-size: 22px"
  
  --------------------------------
  ## 11. Tips
@@ -132,4 +133,9 @@ Relative vs Absolute paths
  <b>(use when u want make a word or phrase bold just for styling)
  <strong>(use if you want giving warning or make an important inofrmation or keyword bold)
  
+ ---------------------------------
+
+ ## CSS element
+ <link rel="" href=""/>  
+ <style> 
  
