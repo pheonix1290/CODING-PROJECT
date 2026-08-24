@@ -1,0 +1,161 @@
+# CSS Notes
+
+## What is CSS?
+
+Cascading Style Sheets
+
+Used for:
+- Styling webpage
+- Formating
+- Styling content of ur webpage
+
+-----------------------------------------------------------------------------------------
+
+## Types of Styling Sheets
+
+- CSS (Cascading Style Sheet)
+- Sass (Syntactically Awesome Style Sheet) 
+- Less (Leaner Styling Sheet)
+
+-----------------------------------------------------------------------------------------
+
+## How to Add CSS
+
+# Inline:
+- this is best used for applying style to a single element
+<tag style="css"></tag> for e.g <html style="background:red"></html>
+
+# Internal:
+- this is best used for applying style to a single webpage
+<head>                               
+    <style>
+        selector{
+            property: value;
+        }
+    </style>
+</head>
+for e.g
+<head>
+   <style>
+       html{
+        background: blue;
+       }
+   </style>      
+</head>
+
+# External:
+- this is best used for multipage website if you wnat apply same style all throught
+- involves creating a seperate file for css can be named anything but end with(.css)
+- also involves a <link/> elemnt within the html file 
+  <head>
+      <link rel="stylesheet" href="./style.css"/>
+  </head>
+
+-----------------------------------------------------------------------------------------
+
+## Types of selector
+
+# Universal selector:
+- this is used when you want to select all element and apply the same style 
+- it is represented with an (*)
+   *{
+    colour:purple;
+   } 
+
+# Type/ element selector:
+- this is best used when you want to select all tags that bear the name of that element
+   tag{                          
+    property:value; 
+   }
+                                    <!--CSS-->
+   <style>
+   div{
+    colour:white;
+   } 
+   </style>  
+
+#   class selector: 
+- best used when you want to select all element which bear the same class
+- class selector in css is written with a fullstop before the selector(.class)
+e.g 
+   <div class="alert-text"></div>
+    <!-- CSS -->
+   <style> 
+   .alert-text{
+          colour:red;
+   }
+   </style>
+
+# ID selector:
+- best used when you want to select all element which bear the same id
+- ID selector in css is written with a sharp(#) brfore the selector(#ID)
+e.g
+  <div id="title"></div>
+                       <!--CSS-->
+  <style>                     
+    #title{
+        background-colour:red;
+    }  
+    </style>                 
+
+# Grouping selector:
+- best used when a group of elemnt have similar style declaration and u dont want repition
+- you but a comma inbetween the selector inorder to group them
+<style>
+.read {
+  color: white;
+  background-color: black;
+}
+
+.unread {
+  color: white;
+  background-color: black;
+}
+</style>
+                              <!--Grouping selector-->
+<style>
+     .read,
+     .unread{
+            colour: white;
+            background-colour: black;
+         }
+</style>  
+
+# Chaining selector:
+- best used when you wnat to select elemnts that has  both classes at the same time
+- they should be no space between them if not it becomes a descendant combinator
+e.g
+   <div class="subsection header"></div>
+   <p class="subsection" id="preview"></div>
+                 <!-- CSS -->
+<style>
+    .subsection.header.{
+        colour:red;
+    }
+</style>    
+<style>
+    .subsection#preview{
+        colour: blue;
+    }
+</style>
+
+# Descendant combinator:
+- best used when you want to select an elemnt nested within another element or basically telling the browser to look within the parent element and style the descendant elemnt or elemnt nested within it.
+- a space must be put between it
+e.g
+   <!-- index.html -->
+
+<div class="ancestor">
+  <div class="contents">
+    <div class="contents"></div>
+  </div>
+</div>
+
+<div class="contents"></div>
+                  <!--CSS-->
+<style>
+    .anscestor .contents{
+                            height:750;
+                       }
+</style>                  
+
