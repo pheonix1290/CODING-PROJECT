@@ -183,14 +183,27 @@ e.g
 -----------------------------------------------------------------------------------------
 
 ## CSS Properties
+# colour
  colour
  background-colour
+# font
  font-family
  font-size
  font-weight
  text-align
+ text-transform
+# box model
  height
  width
+ border
+ border-width
+ margin
+ padding
+ box-sizing: border-box;
+ inine
+ block
+ display
+
 -----------------------------------------------------------------------------------------
 
 ## colour:
@@ -213,7 +226,7 @@ colour in CSS can be sepcified by this following methods:
 e.g font-family: "Times New Roman", serif;
 
 - font-size (used for chaning size of text/font)
-e.g font-size: 22px
+e.g font-size: 1px/1pt/1em/1rem
 
 - font-weight (used for changing boldness of a text)
 - the value can be numerical or keyword
@@ -222,9 +235,108 @@ e.g font-weight: 700; / font-weight: bold;
 - text-align (used to set the position of text)
 e.g text-align: centre;
 
+- font-style (used to set the style of the text)
+
 ----------------------------------------------------------------------------------------
 
 ## Images:
 - height (used to set height of image)
 - width (used to set width of image)
 e.g height= "auto"/ width="200px"
+
+----------------------------------------------------------------------------------------
+
+## Margin:
+-  increases the space between the borders of a box and the borders of adjacent boxes.
+- the space between border and the content beside or around it
+- other margin elemnt include:
+e.g 
+  <style>
+    p{
+        margin: 20px;
+        margin: 10%;
+    }
+  </style>
+margin-top
+margin-bottom
+margin-left
+margin-right
+
+-----------------------------------------------------------------------------------------
+
+## Border:
+- adds space (even if it’s only a pixel or two) between the margin and the padding.
+- the dimension of a container which is nirmally madw with the <div> element
+- it used determine size of different sides of the container
+- the other border include:
+   border-top
+   border-bottom
+   border-left
+   border-right
+- border element can also be used to set both top & bottom position seprately form right & left position
+- this can be applied using 
+<style>
+    .term {
+        border-width: 10px 20px}  
+</style>  
+- the first slot which is (10px) reresent both the top and bottom
+- the second slot which is (20px) represent both the left and right 
+
+-----------------------------------------------------------------------------------------
+
+## Padding:
+-  increases the space between the border of a box and the content of the box.
+- this is the space between the content and the border
+- it is used to expand or push out the border 
+  e.g 
+<style>
+.term{
+    padding: 10px;
+}  
+</style>
+
+------------------------------------------------------------------------------------------
+
+## Text-transform:
+- used to changed all text from upperclass or lower class
+- the different values involve:
+text-transform: none;
+text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: full-width;
+text-transform: full-size-kana;
+text-transform: math-auto;
+
+--------------------------------------------------------------------------------------
+
+## box-sizing:
+- used to modify the box calculation
+## box-model:
+- two types of boxes
+they determinehow html element interact
+  - inline (these is diaplayed in line wth the eleemnt they our placed beside)
+  - block (these is default display seen when prievewing of ur webpage, as  element our stack untop eachother)
+  - inline-block (serves as the middle ground, as it behaves like an inine ement where it inline with the element it placed beside but it has the padding and margin of a block-style)
+
+ - display (use to detremine how html element appear on the webpage) 
+
+- <div> and <span> our the boxes used in containg content for styling
+- <div> used as a block- container which behves like a rectangle,containg element which have similar content etc
+  - it uses class/id as a hook for CSS styling
+e.g
+<div class="introduction">
+   <h2>Introduction</h2>
+</div>  
+
+- <span> it an inline container that sit inside a line of text,it doesn't start on a new line unlike <div> that starts on a new line
+ - you only use it when you wnat style or target just part of a sentence or a specific word
+ - ypou use the class/id as a hook for css styling  
+ - takes up as musch space as needed
+e.g
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+  minim veniam, <span class="highlight">quis nostrud <a href="https://www.dictionary.com/browse/exercitation">exercitation</a>
+  ullamco laboris</span> nisi ut aliquip ex ea commodo consequat.   
+</p> 
