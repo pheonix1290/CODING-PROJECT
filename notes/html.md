@@ -46,7 +46,7 @@ Used for:
 <tfoot>
 <figure>
 <figcaption>
-<iframe>
+<iframe> (used as an injector to embed content from another webdite without requiring user to leave ur website)
 <div>
 <span>
 When to use each.

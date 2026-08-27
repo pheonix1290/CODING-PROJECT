@@ -203,6 +203,13 @@ e.g
  inine
  block
  display
+# position
+ relative
+ fixed
+ absolute
+ static 
+ top
+ left/right
 
 -----------------------------------------------------------------------------------------
 
@@ -273,6 +280,11 @@ margin-right
    border-bottom
    border-left
    border-right
+   border-width
+   border-stlye
+   border-radius
+- you use border radius when you wnat make the corner round
+- you use border style to change the tytpe of line the border uses   
 - border element can also be used to set both top & bottom position seprately form right & left position
 - this can be applied using 
 <style>
@@ -340,3 +352,44 @@ e.g
   minim veniam, <span class="highlight">quis nostrud <a href="https://www.dictionary.com/browse/exercitation">exercitation</a>
   ullamco laboris</span> nisi ut aliquip ex ea commodo consequat.   
 </p> 
+
+--------------------------------------------------------------------------------------------
+
+## Position
+- used to determine the position of a box in a webpage
+- position consist of 5 different type of positions:
+  - static (this is the default position of a box in a webpage adn it stays stacked untop of eachother)
+  e.g 
+<style>
+{
+position: static;
+top:10px;
+right:10px
+}
+</style> 
+
+  - relative (it a position that is relatove to the default position which cango side ways,top or bottom)
+  e.g
+<style>
+  {
+    position: relative;
+    top:10px;
+    right: 10px
+  }  
+</style> 
+
+  - absolute ( it position at the top-left corner of a webpage by default if it has no parent box but it normal at the top-left corner of a parent box) 
+  e.g
+<style>
+    {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+</style>  
+  # Z index
+  - it used to determine which elements go untop of eachother on the y-axis
+  - it is normally the element whith the highest z-inde that goes untop
+
+  - fixed (is a block that act like a sticker and position is stick to the screen and follow as you scroll down or up)
+  
