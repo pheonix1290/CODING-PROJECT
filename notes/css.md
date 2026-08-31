@@ -9,6 +9,46 @@ Used for:
 - Formating
 - Styling content of ur webpage
 
+---------------------------------------------------------------------------------------------------
+
+## Cascading Rules
+- it involves hierachy which decided which is applied and ignored over the after
+- They are categories that dictate the level of a css decleration:
+  - position    |  least 
+  - specificity |
+  - Type        |
+  - Importance  | most
+
+# Position
+  - in position css chooses the highest position which is the last style decleration written
+   e.g 
+<style>
+  li{
+    color: red;
+    color: blue;
+  }
+  li{
+    color:green;    /*this is owuld be priotised first due to the lower down the rule the more    important*/
+  }
+</style>  
+
+# Specificity
+  - the more specific the selector the more imoprtant it is
+  - order of specificity goes
+   element            | least
+   class selector     |
+   attribute selector |
+   id selector        |more
+
+  - id selector is more specific becuase ideally you only ment to have only one particular id name to that one element on that webpage
+
+# Type
+<link rel="stylesheet" href= "./style.css"> External    | least
+<style></style>                             Internal    |
+<h1 style= "">Hello</h1>                    Inline      | most
+
+# Important 
+  - the (!) most important keyword this ensure this is the most important rule to that element
 -----------------------------------------------------------------------------------------
 
 ## Types of Styling Sheets
@@ -203,6 +243,8 @@ e.g
  inine
  block
  display
+ transform
+ overflow
 # position
  relative
  fixed
@@ -392,4 +434,56 @@ right:10px
   - it is normally the element whith the highest z-inde that goes untop
 
   - fixed (is a block that act like a sticker and position is stick to the screen and follow as you scroll down or up)
-  
+
+  -------------------------------------------------------------------------------------------------
+
+  ## Overflow
+  - used to determine what happened to a content inside a box if it too big
+  - different values include:
+    - visible(usually the default in a browser)
+    - hidden (chops of the extra content spilling out of the box)
+    - scroll(forces scrollbars unto the box, so users can scroll to see it)
+    - auto( it add a scrollbar on only one condition, that is if  the content actually spills out of the box)
+
+---------------------------------------------------------------------------------------------------
+  ## Transformation  
+  - different tyoes of transformerd:
+
+  # translate(Move)
+  - used to move elements from its original position along X(horizontal) and Y (Vertical)
+    - translate (x,y): moves along both axes
+    - translateX(x): moves horizontally
+    - translateY(y): vertically only
+
+  e.g
+<style>
+  .move-me{
+    transform:translate(80px, 50px);
+  }
+</style>  
+  # Rotate(Turn)
+  - used to rotate element cloackwise(+value) or anticlockwise(-value)
+  - the measurement for values can be (deg)/(turn)
+  e.g
+ <style>
+  .rotate-me{
+    transform: rotate(45 deg);
+  }
+ </style> 
+ # scale(resize)
+ - changes the size of the element
+ - value (1) it orignal size
+ - value (2) doubles it
+ - value (0.5) halves it
+ e.g
+<style>
+  .scale-me{
+    trtansform: scale(1.5)
+  }
+</style> 
+ # skew(Tilt)
+ - tilt an element along the x/y by a specific degree
+ e.g 
+<style>
+transform: skewY(20deg)    
+</style>
