@@ -223,6 +223,8 @@ e.g
 -----------------------------------------------------------------------------------------
 
 ## CSS Properties
+float
+clear
 # colour
  colour
  background-colour
@@ -252,6 +254,12 @@ e.g
  static 
  top
  left/right
+ # display
+ block
+ inline
+ inline-block
+ flex
+ grid
 
 -----------------------------------------------------------------------------------------
 
@@ -369,7 +377,7 @@ text-transform: math-auto;
 ## box-model:
 - two types of boxes
 they determinehow html element interact
-  - inline (these is diaplayed in line wth the eleemnt they our placed beside)
+  - inline (these is diaplayed in line wth the eleemnt they our placed beside and it can't be given a width or height)
   - block (these is default display seen when prievewing of ur webpage, as  element our stack untop eachother)
   - inline-block (serves as the middle ground, as it behaves like an inine ement where it inline with the element it placed beside but it has the padding and margin of a block-style)
 
@@ -487,3 +495,88 @@ right:10px
 <style>
 transform: skewY(20deg)    
 </style>
+
+---------------------------------------------------------------------------------------------------
+
+## Float
+ - used if you wanted another elemnt or text to warp around an element
+ - the different values invlove
+  - left
+  - right etc
+ e.g
+<style>
+  .mark{
+    float: left;
+  }
+</style>  
+
+---------------------------------------------------------------------------------------------------
+
+## Clear
+- it used to remove any responsibility to wrap around things that our floating
+- the fifferent values inlove
+  - left
+  - right
+  - both
+  e.g
+<style>
+  .left{
+    clear:both;
+  }
+</style>  
+
+---------------------------------------------------------------------------------------------------
+
+## Media Query
+ - it used for website responsiveness
+ - it tells the webpage what css rules to apply when it has reach the breakpoint set
+ - (max-width:600px) is the breakpoint in the example below
+ e.g
+<style>
+@media(max-width:600px){
+  /* look into this bracket before appling css gor screen below or equaol to 600px */
+} 
+/* these our combine breakpoint */
+@media(min-width:600px) and (max-width:900px)
+/* it tells webpage to apply this css style with screen equal or higher than 600px and apply to screen equal orlower than 900px, r just between them */
+</style> 
+
+---------------------------------------------------------------------------------------------------
+
+## Grid
+ - can be apply by creating a div and nesting other divs within it
+ - it allows us to define how columns and rows can be layed out in a webpage
+ - it best used to create a 2D layout with column and row
+ e.g
+<style>
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*means make 2 columns*/
+    grid-template-rows: 100px 200px 300px; /*means ake 3 rows*/
+    gap: 30px; /*states the spaces between each row in a column*/
+  }
+  .first{
+    gird-column: span 2; /*tells u how much space u should take up*/
+  }
+</style> 
+
+---------------------------------------------------------------------------------------------------
+
+## Flexbox
+ - allows you to create a 1D layout either box our layed out horizontally or vertically
+ e.g
+<style>
+  .flex-container{
+    display: flex;
+  }
+  .card{
+    height: 100px;
+    flex: 1; /*makes allo boxes to have the same or equal width distribution*/
+  }
+  .first{
+    flex:2; /*doubles the width of the box*/
+  }
+  .second{
+    flex:0.5;/*halfs the width of the box*/
+  }
+</style> 

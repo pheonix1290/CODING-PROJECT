@@ -93,3 +93,73 @@ Building a prototype of a  travel website
 ## Something new that I learnt:
 - you can place fieldsite element within a table 
 - you can resize a table and the content within it using (cellspacing) and (cellpadding)
+
+-------------------------------------------------------------------------------------------
+
+# Sunday 6th September,2026
+
+-------------------------------------------------------------------------------------------
+# Today's Focus:
+
+- How to use position property to create flags of different countries
+- How to use media query to create a responsive website
+
+# What I learned:
+- how to use absolute, fixed,relative,static
+- how to use z-index to put a box infront of the other
+- how to use media query to change the width of website dependent on the device it been displayed on
+- how to use media query to set the css rule that should be applied when the creen reaches a certain width
+
+-------------------------------------------------------------------------------------------
+
+# What I built
+- the swizflag
+- the greece flag
+- the uk flag
+- the flag of japan
+- the flag of loas
+- home page of a software agency
+
+-------------------------------------------------------------------------------------------
+
+# challenges
+- i found using absolute and relative position in making uk flag,because I need to slant the cross diagonally
+
+- I found it challenging to use media query to make the software agency responisve,as the box did follow the css rule that most be applied once the screen reached the width I set
+
+- I also found it challenging to use float property as my paragraph elemnt within the div didn't wrap around the img
+
+-------------------------------------------------------------------------------------------
+
+# Solution
+- I used the transform: skewX and skewy property and a value of 30 deg and -30deg
+ to slant the cross diagnonally on the uk flag
+<style>
+flag{
+  transform: skewY(30deg);
+  transform: skewX(-30deg)
+}  
+  </style>
+- for media query I changed the value of the display proprerty from inline to block
+this allowed the boxed to stack untop of eacher other and a margin-bottom of 10px inorder for there to be gap between if box 
+<style>
+@mediaquery (max-width: 680px){
+  .card{
+    display: block;
+    margin-bottom: 10px;
+  }
+}  
+</style>
+- I use float left inorder to ake the paragraph element wrap around my image instead of float right
+<style>
+.img{
+  float: left;
+}
+  </style>
+
+-------------------------------------------------------------------------------------------
+
+## Something new that I learnt:
+- transform property (translate and skew)
+- clear property 
+
