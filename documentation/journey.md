@@ -163,3 +163,26 @@ this allowed the boxed to stack untop of eacher other and a margin-bottom of 10p
 - transform property (translate and skew)
 - clear property 
 
+--------------------------------------------------------------------------------------------
+
+# Monday 7th September,2026
+
+--------------------------------------------------------------------------------------------
+
+# Today's Focus:
+
+- How To use Flexbox
+
+# What I learned
+- how to use flex box to create speciifc layout of your webgage instead of using position or display block property
+
+# What I built
+- I position the nav bar to be iwthin the header of the webpage
+
+# Challenges
+- I didn't really face any challenges to do because I only did simple task,probably when I go unto more complex layouts
+
+# Something new that I learnt
+- I learnt gap property, you can use it to put paces between content inside your flex box
+- I laos learnt about inline-flex, it a box that has same propeeties as flex but it can be place in line of other content,this allow content to be place beside or untop/blewo it.
+
