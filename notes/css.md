@@ -580,3 +580,8 @@ transform: skewY(20deg)
     flex:0.5;/*halfs the width of the box*/
   }
 </style> 
+  # Flex- direction
+- flex- direction(it is been used to set how content or flex item in a flex box is arrangeeither vertically or horizontal)
+- <flex direction> is normally set at row which is the default and set the content to be horizontal,but to set it vertically you use the value called "column".
+- <flex basis> it used to change the width or height of the flex item when using flex direction.
+ when the flex direction is set to row the flex basis changes the width but when set to coloumn it changes the height, as the main axis would be going form top to bottom
