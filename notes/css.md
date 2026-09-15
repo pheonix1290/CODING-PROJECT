@@ -260,7 +260,16 @@ clear
  inline-block
  flex
  grid
-
+ # flexbox
+order
+flex-basis
+flex-direction
+flex-wrap
+justify-content
+align-item
+align-content
+align-self
+flex-flow
 -----------------------------------------------------------------------------------------
 
 ## colour:
@@ -585,3 +594,76 @@ transform: skewY(20deg)
 - <flex direction> is normally set at row which is the default and set the content to be horizontal,but to set it vertically you use the value called "column".
 - <flex basis> it used to change the width or height of the flex item when using flex direction.
  when the flex direction is set to row the flex basis changes the width but when set to coloumn it changes the height, as the main axis would be going form top to bottom
+  # values-used in Flex-direction:
+   <style>
+  .yellow{
+     flex-direction: row (items places in text direction)
+    flex-direction: row-reverse (items placed in opposite direction of the original text direction)
+    flex-direction: column (items placed form top - bottom)
+    flex-direction: column-reverse (items placed from bottom - top)
+    }
+  </style>
+
+  # Order
+  - it is used to change the arrangment or the position of how flex items our been arange eitheir from smalles to higest(1) or hightest to lowest(-1)
+  -the default number in html is 0. The value of the order property in html is 
+  - to go back you uses a number less than o to go forward u use a number higher than 0
+  <style>
+    .green{
+      order: -1;
+    }
+  </style>
+  
+  # Flex-wrap
+  - it is used to determine what happens to flex item in a flex box if the content is to long to if it as it doesn't atumotically contuine to next line
+  - This is due to the default beign set to the value (nowrap)
+  In order for it to countine to next line u ither use the values "nowrap" / "wrap"
+  - you can use <b>wrap-inverse</b> to change the direction t wraps
+  <style>
+    .brown{
+      flex-wrap: nowrap | wrap | nowwrap | wrap-inverse;
+    }
+  </style>
+
+  # justify -content 
+  - it used to shift the flex item along the main/x axis
+  - It is also another highly recommended ways to centre content without using traditional css
+  - <b> flex-start/end</b> puses the flex item either left or right along the x axis
+  -<b>space-between</b> puts gaps between items withn a flex box,but not at the start or end,but space-around,put the same equal amount of apcae form the start -end.
+   # the values used include:
+   
+   <style>
+  .pink{
+    justify-content: flex-end | flex-start | center | space-between | space-around
+  }
+   </style>
+
+   # align-item
+   - bit sets the flex item distribution or layout across the y/flex axis.
+   - it moves items vertically affecting heigh
+   - it can't work without setting the height (vh) viewpoint height,helps set the height of the
+    window it been viewed
+   - <b>flex-start/end</b> goes either to top/bottom along the y axis 
+    #values used in align-item
+      <style>
+        .red{
+          align-items: flex-end | flex-start | centre | stretch | baseline
+        }
+      </style>
+
+  # align-content:
+  - this is used to determine the space or gap between lines
+  <style>
+    .blue{
+      align-content: flex-start | flex-end | center |
+    }
+  </style>
+
+  # flex- flow
+  - it the combination of <flex-direction> + <flex-wrap>
+  - or if they where to have a baby it called flex-flow, at you can set the direction and how it is wrapped at the same time.
+  <style>
+    .cobolt{
+      flex-flow: row wrap;
+    }
+  </style>

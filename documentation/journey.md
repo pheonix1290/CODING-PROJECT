@@ -186,3 +186,56 @@ this allowed the boxed to stack untop of eacher other and a margin-bottom of 10p
 - I learnt gap property, you can use it to put paces between content inside your flex box
 - I laos learnt about inline-flex, it a box that has same propeeties as flex but it can be place in line of other content,this allow content to be place beside or untop/blewo it.
 
+
+-----------------------------------------------------------------------------------------
+
+# Tuesday 15th September, 2026.
+-----------------------------------------------------------------------------------------
+
+# Today's Focus:
+- How to use Flex-direction and how make a Flexible layout
+
+# What I learned
+- how to use flex-direction to change the position of flex item along the x or y axis
+- how to use the property order to chnage the arrangment of my flex item
+- how to use flex-wrap to make my content to countinue to next line without it been hiden if too long
+- how to use justify-content to cnetre my items instead of using traditional css
+
+
+# What I built
+- well I didn't really build anything just trying out these new properties what they do and what each value mean adn how they connect or affect  eachother like how use a certain value for flex-direction itcan directly chnage what the justify-content would do.
+
+# Challenges
+- well I used flexbox froggy to test out my knowledge, it became more challenging when I tried to create a complex alyout that involved for of these flex box properties for flexible layout. This is was the challenge.
+  <!-- Bring the frogs home one last time by using the CSS properties you've learned: 
+
+  justify-content
+  align-items
+  flex-direction
+  order
+  align-self
+  flex-wrap
+  flex-flow
+  align-content -- >
+
+# Solution
+I eventually googles it up and I needed:
+<style>
+  #pond {
+  display: flex;
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between;
+}
+</style>
+
+# Something new that I learnt:
+- well what I learnt today was new to me but I fell the <flex-flow> property is new for me it like if flex-direction + flex-wrap had a baby,because you can use both of the value of this property in this one,at same time
+- also I was suprised to discover flex-wrap has a property called wrap-reverse becasue I wasn't taught taht course,but good to know if I wnat to wrap my flex items in opposite direction.
+
+
+
+
+
+
