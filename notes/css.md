@@ -667,3 +667,19 @@ transform: skewY(20deg)
       flex-flow: row wrap;
     }
   </style>
+
+  # Flex style 
+  - it is used to shrink or grow content in a flex box
+  - you use <flex-grow> for max-width,as it set how big an item can grow
+  - you use <flex-shrink> for min-width, as it set how small an item can shrink
+  - the values our numeric
+  - you can use <flex-basis> to set the inital width if flex-direction is a row or height if in column
+  - you can set all this 3 values at once by just saying flex and set the values but put space between each.
+  <style>
+    .container{
+      flex: 1 1 0; <!-- set in the order of growth,shrink,basis-->
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0; <!-- This makes all the content to ahve equal width/height -->
+    }
+  </style>

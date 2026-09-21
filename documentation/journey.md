@@ -234,6 +234,39 @@ align-content: space-between;
 - well what I learnt today was new to me but I fell the <flex-flow> property is new for me it like if flex-direction + flex-wrap had a baby,because you can use both of the value of this property in this one,at same time
 - also I was suprised to discover flex-wrap has a property called wrap-reverse becasue I wasn't taught taht course,but good to know if I wnat to wrap my flex items in opposite direction.
 
+-----------------------------------------------------------------------------------------------------
+
+
+# Monday 21st September, 2026.
+
+-----------------------------------------------------------------------------------------------------
+
+# Today's Focus:
+- How to use Flex sixing to make a flexible layout
+
+# What I learned:
+- how to shrink or grow a flex-item within a flex-container
+- how to use flex-grow and flex-shrink to set the max-width and min-width
+- how to use flex-basis to set the intial or starting width 
+
+
+# What I built
+- I didn't really build anything but I played around with these proprerty to see how make a flex box to be responsive and more flexible
+
+# Challenges
+- well I still finding hard to wrap my head around how flex-basis ans flex-grow and shrink affect eachother
+
+# Soluton
+- well I plan to do more firtehr reading and try playing around with these properties and also breaking them to understand how they work
+
+# Something new I learnt
+- iF I want to set the value for flex-growth,flex-shrink and flex-basis at once, I just use flex, and set the values but put space inbetween them.
+e.g
+<style>
+  .container{
+    flex: 1 1 0;
+  }
+</style>
 
 
 
