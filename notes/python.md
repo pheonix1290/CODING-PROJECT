@@ -11,4 +11,7 @@
 - (flow) is a string used to hold data that our  decimal numbers.
    e.g 
    
-   
+## Variables
+- in python we dont use div to assign class / id to give value a name we call it variable.
+      
+                          variable_name = value 
